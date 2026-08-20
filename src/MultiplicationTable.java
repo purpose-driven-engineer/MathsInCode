@@ -32,4 +32,11 @@ public class MultiplicationTable {
              }
          }
      }
+
+    /*
+     * The next endeavour is to use switch, method, object, classes, encapsulation, etc to let user choose
+     * either a single or variable range of numbers to generate a multiplication table
+      */
+
+
 }
