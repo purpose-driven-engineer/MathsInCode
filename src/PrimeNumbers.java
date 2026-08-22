@@ -5,26 +5,33 @@ public class PrimeNumbers {
     // still progress
     public static void main(String[] args){
 
-        int n, status = 1, num = 3;
+        int n;
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the number of prime numbers you want: ");
         n = scanner.nextInt();
+        scanner.close();
 
-        if (int count = 2; count <= n; ){
+        int count = 0;
+        int num = 2;
+
+        while(count < n){
+            boolean isPrime = true;
+
             for (int j = 2; j <= Math.sqrt(num); j++){
-                if((num % j) == 0){
-                    status = 0;
+                if (num % j == 0) {
+                    isPrime = false;
                     break;
                 }
             }
-            if (status != 0){
+            if (isPrime) {
                 System.out.println(num);
                 count++;
             }
-            status = 1;
             num++;
         }
+
+
     }
 }
