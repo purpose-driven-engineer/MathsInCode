@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/*
+What is a Floyd's Triangle?
+
+
+ */
+
 public class FloydTriangle {
     public static void main(String[] args){
         int n, c, d;
@@ -12,8 +18,10 @@ public class FloydTriangle {
 
         System.out.println("Floyd's Triangle: ");
 
+        // ...
         for(c = 1; c <= n; c++){
             for(d = 1; d <= c; d++){
+                // ...
                 System.out.println(num + " ");
                 num++;
             }
