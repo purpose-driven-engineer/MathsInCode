@@ -6,7 +6,6 @@ What is a Palindrome Validator?
 public class PalindromeValidator {
     public static void main(String[] args){
         String originalString;
-
         StringBuilder reverseString = new StringBuilder();
 
         try (Scanner scanner = new Scanner(System.in)){
