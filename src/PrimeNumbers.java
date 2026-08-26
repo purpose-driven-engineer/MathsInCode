@@ -1,8 +1,13 @@
 import java.util.Scanner;
 
+/*
+What are Prime Numbers?
+
+ */
+
 public class PrimeNumbers {
 
-    // still progress
+    // ...
     public static void main(String[] args){
 
         int n;
@@ -13,23 +18,27 @@ public class PrimeNumbers {
         n = scanner.nextInt();
         scanner.close();
 
+        // ...
         int count = 0;
         int num = 2;
 
+        // ...
         while(count < n){
-            boolean isPrime = true;
+            boolean isPrime = true; // ...
 
+            // ...
             for (int j = 2; j <= Math.sqrt(num); j++){
                 if (num % j == 0) {
                     isPrime = false;
                     break;
                 }
             }
+            // ...
             if (isPrime) {
                 System.out.println(num);
                 count++;
             }
-            num++;
+            num++; // ...
         }
 
 
